@@ -1,9 +1,9 @@
-resource "azurerm_resource_group" "akilarg1" {
+resource "azurerm_resource_group" "rahulrhlrg1" {
   name = var.resourcegroupname
   location = var.resourcegplocation
 }
 
-resource "azurerm_storage_account" "akilastorage" {
+resource "azurerm_storage_account" "arahulrhlstorage" {
   name = var.storageaccountname
   resource_group_name = azurerm_resource_group.akilarg1.name
   location = azurerm_resource_group.akilarg1.location
